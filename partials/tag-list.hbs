@@ -1,0 +1,8 @@
+<h3 class="section-header">tags</h3>
+{{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
+    <ul id="tag-list">
+        {{#foreach tags}}
+            <li><a href="/tag/{{slug}}">{{name}}</a></li>
+        {{/foreach}}
+    </ul>
+{{/get}}

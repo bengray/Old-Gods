@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{5b03701595, bootstrap, highlight, jquery-3.2.1.slim}" />
+    <includedPredefinedLibrary name="ECMAScript 6" />
+  </component>
+</project>

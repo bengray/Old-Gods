@@ -1,0 +1,391 @@
+/* Table of Contents
+/* ------------------------------------------------------------
+
+This is a development CSS file which is built to a minified
+production stylesheet in assets/built/screen.css
+
+1.  CSS Reset
+2.  Layout
+3.  Special Things
+4.  Site Header
+5.  Site Navigation
+6.  Post Feed
+7.  Single Post/Page
+8.  Error Template
+9. Site Footer
+
+*/
+
+
+/* 1. Reset - Get it right from the start
+/* ---------------------------------------------------------- */
+@import "global.css";
+
+
+/* 2. Layout
+/* ---------------------------------------------------------- */
+body {
+    background: #ffffff;
+    font-family: Helvetica, Arial, "Open Sans", sans-serif;
+    color: #2e2e2e;
+    font-weight: 300;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #CF1259;
+}
+
+a {
+    color: #404E5C /*#18314F*/;
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+#site-main p {
+    margin-bottom: 15px;
+}
+
+/* 3. Special Things
+/* ---------------------------------------------------------- */
+.section-header {
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.post-template .section-header,
+.page-template .section-header,
+.tag-template .section-header {
+    margin-top: 30px;
+}
+
+.welcome-note {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.welcome-note span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pin-item {
+    padding-bottom: 15px;
+}
+
+.pin-item br {
+    display: none;
+}
+
+.pin-description{
+    padding-left: 3px;
+    margin-left: 3px;
+}
+
+.pin-description:before {
+    content:"// ";
+}
+
+.pin-tag {
+    display: none;
+}
+
+.margin-vertical-md {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.margin-vertical-lg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.padding-collapse-left {
+    padding-left: 0px !important;
+}
+
+.padding-collapse-right {
+    padding-right: 0px !important;
+}
+
+#tag-list li {
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+#tag-list li a {
+    color: white;
+    font-size: 12px;
+    background: #404E5C;
+    padding: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#tag-list li a:hover {
+    background: #CF1259;
+}
+
+#recent-posts-list li {
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.recent-posts-meta-date {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+    .hidden-xs {
+        display: none;
+    }
+
+    .margin-xs-horizontal-sm {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h1.site-title {
+        font-size: 26px;
+    }
+
+}
+
+
+/* 4.  Site Header
+/* ---------------------------------------------------------- */
+
+.site-header {
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+h1.site-title {
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+h1,
+a.site-nav-logo {
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: -3px;
+}
+
+.home-template h1.site-title {
+    border-bottom: 1px solid black;
+}
+
+/* 5.  Site Navigation
+/* ---------------------------------------------------------- */
+.nav {
+    display: block;
+}
+
+.nav li {
+    line-height: 32px;
+}
+
+.nav li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 300;
+}
+
+.nav li {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.nav li:hover {
+    background-color: #dddddd;
+}
+
+.nav li.nav-current {
+    background-color: #CF1259; /*#DA1074;*/
+}
+
+.nav li.nav-current a {
+    color: white;
+}
+
+/* 6.  Post Feed
+/* ---------------------------------------------------------- */
+.post-card {
+    margin-bottom: 30px;
+    line-height: 22px;
+}
+
+.post-card-header {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.archive-post {
+    line-height: 24px;
+}
+
+/* 7.  Single Post/Page
+/* ---------------------------------------------------------- */
+.post-template .site-nav,
+.page-template .site-nav,
+.tag-template .site-nav {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.post-template .site-main,
+.page-template .site-main,
+.tag-template .site-main {
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.page-template h2,
+.post-template h2,
+.tag-full-header h2,
+.archive-full-header h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.post-full-header h2 {
+    margin-bottom: 15px;
+}
+
+.post-full-content,
+.page-full-content {
+    line-height: 26px;
+}
+
+.page-template h3,
+.post-template h3,
+.archive-full-header h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.tag-full-header h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.post-full-content img,
+.page-full-content img{
+    width: 100%;
+}
+
+img.post-image {
+    margin-bottom: 15px;
+}
+
+.post-full-content ul li,
+.page-full-content ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+.post-full-content ul,
+.page-full-content ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.post-full-content ol,
+.page-full-content ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+blockquote {
+    padding: 0 21px;
+    margin: 21px 0;
+    border-left: 4px solid #202020;
+}
+
+pre {
+    margin-bottom: 10px;
+}
+
+
+.post-full-comments {
+    background: #f5f5f5;
+    padding: 21px;
+    margin-top: 42px;
+}
+
+.share-wrap {
+    text-align: center;
+    padding: 21px 0;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.share-wrap span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.share-wrap li {
+    display: inline-block;
+    list-style: none;
+    line-height: 14px;
+    font-size: 18px;
+    margin: 0 4px;
+    text-align: -webkit-match-parent;
+}
+
+.share-wrap li a {
+    padding: 10px;
+}
+
+/* 8.  Error Template
+/* ---------------------------------------------------------- */
+
+/* 9. Site Footer
+/* ---------------------------------------------------------- */
+.site-footer {
+    font-size: 12px;
+    border-top: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    float: left;
+}
+
+.site-footer-right {
+    float: right;
+}

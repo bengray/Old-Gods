@@ -1,0 +1,53 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+<header class="site-header">
+    <h1 class="site-title">
+        <a href="/">{{@blog.title}}</a>
+    </h1>
+    <div class="row">
+        <div class="col-4">
+            {{> "site-nav"}}
+        </div>
+
+{{!-- This bit here is the welcome message on the front page --}}
+        <div class="welcome-note col-8">
+            <span>Hi, I'm Ben Gray.</span> I'm a software engineer by day, sportsman by night (and weekends).
+            I've taken a weird route to get to where I am today, it's not been direct and it's not been easy.
+            Good news for you, I love telling stories. I believe stories is the best way to teach, to share...
+            to bring others along. That's my goal here: to bring you along on my journey as it rolls out in front of me.
+
+        </div>
+    </div>
+
+</header>
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main" role="main">
+    <div class="row">
+        <div class="post-feed col-11 col-sm-6 margin-xs-horizontal-sm">
+            <h3 class="section-header">Journal</h3>
+            {{#foreach posts limit="7"}}
+
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                {{> "post-card"}}
+
+            {{/foreach}}
+
+            <div class="margin-vertical-md">
+                <a href="/archive-post">View Full Archive &rarr;</a>
+            </div>
+        </div>
+
+        <div class="col-11 col-sm-4 margin-xs-horizontal-sm">
+            <h3 class="section-header">Linkroll</h3>
+            <script language="javascript" src="http://pinboard.in//widgets/v1/linkroll/?user=bgray&count=20"></script>
+        </div>
+
+        <div class="col-11 col-sm-2 margin-xs-horizontal-sm">
+           {{> "tag-list"}}
+        </div>
+    </div>
+</main>

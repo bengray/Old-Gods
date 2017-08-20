@@ -1,0 +1,31 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+<header class="margin-vertical-lg col-4 padding-collapse-left">
+    <h1 class="site-title">
+        <a href="/">{{@blog.title}}</a>
+    </h1>
+    {{> "site-nav"}}
+</header>
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main col-8 col-sm-6" role="main">
+    {{#tag}}
+        <header class="tag-full-header">
+            <h2>Tag: {{name}}</h2>
+            <h3>A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}</h3>
+        </header>
+    {{/tag}}
+    <div class="post-feed">
+        {{#foreach posts}}
+        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
+        {{/foreach}}
+    </div>
+
+</main>
+<div class="col-2 hidden-xs">
+    {{> "tag-list"}}
+    {{> "recent-posts"}}
+</div>

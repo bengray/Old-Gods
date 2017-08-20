@@ -1,0 +1,13 @@
+<h3 class="section-header">Recently</h3>
+{{#get "posts" limit="3" as |recents|}}
+    <ul id="recent-posts-list">
+        {{#foreach recents}}
+            <li class="recent-post">
+                <a href="{{url}}">{{title}}</a><br />
+                <time class="recent-posts-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMM YYYY"}}</time>
+            </li>
+        {{/foreach}}
+    </ul>
+{{/get}}
+
+

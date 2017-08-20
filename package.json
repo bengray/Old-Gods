@@ -1,0 +1,13 @@
+{
+    "name": "old gods",
+    "description": "The theme for bendoylegray.com",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=1.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Ben Gray",
+        "email": "bendoylegray@gmail.com"
+    }
+}
