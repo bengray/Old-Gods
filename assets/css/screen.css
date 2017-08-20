@@ -86,6 +86,11 @@ em {
     display: none;
 }
 
+a.pin-title {
+    padding-right: 13px;
+    background: url("../img/icon_externalLink.gif") top right no-repeat;
+}
+
 .pin-description{
     padding-left: 3px;
     margin-left: 3px;
