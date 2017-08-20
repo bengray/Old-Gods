@@ -468,8 +468,10 @@ pre {
     .visible-sm {
         display: block;
     }
+
     .home-template h1.site-title,
-    .site-title {
+    .post-template h1.site-title,
+    .page-template h1.site-title {
         font-size: 32px;
         padding-bottom: 10px;
     }
