@@ -451,6 +451,7 @@ pre {
     #hamburger-button,
     #close-button {
         border-bottom: 1px solid black;
+        text-align: right;
     }
 
     .post-feed {
@@ -501,6 +502,7 @@ pre {
     #hamburger-button,
     #close-button {
         border-bottom: 1px solid black;
+        text-align: right;
     }
 
     .post-feed {
