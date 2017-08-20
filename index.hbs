@@ -55,12 +55,14 @@ into the {body} of the default.hbs template --}}
     <div class="row">
         <div class="post-feed col-11 col-md-6 margin-xs-horizontal-sm">
             <h3 class="section-header">Journal</h3>
-            {{#foreach posts limit="7"}}
 
-            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
-
-            {{/foreach}}
+            {{#get "posts" limit="8" as |recents|}}
+                <ul id="recent-posts-list">
+                    {{#foreach recents}}
+                        {{> "post-card"}}
+                    {{/foreach}}
+                </ul>
+            {{/get}}
 
             <div class="margin-vertical-md">
                 <a href="/archive-post">View Full Archive &rarr;</a>
