@@ -40,7 +40,7 @@ into the {body} of the default.hbs template --}}
                 <span>Share this article:</span>
                 <ul>
                     <!-- facebook -->
-                    <li>
+                    <li class="share-this">
                         <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}"
                            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                             <i class="fa fa-facebook"></i>
@@ -48,7 +48,7 @@ into the {body} of the default.hbs template --}}
                     </li>
 
                     <!-- twitter -->
-                    <li>
+                    <li class="share-this">
                         <a href="https://twitter.com/share?text={{title}}&amp;url={{url absolute='true'}}"
                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                             <i class="fa fa-twitter"></i>
@@ -56,7 +56,7 @@ into the {body} of the default.hbs template --}}
                     </li>
 
                     <!-- reddit -->
-                    <li>
+                    <li class="share-this">
                         <a href="http://reddit.com/submit?url={{url absolute='true'}}&amp;title={{title}}"
                            onclick="window.open(this.href, 'reddit-share', 'width=490,height=530');return false;">
                             <i class="fa fa-reddit"></i>
@@ -64,7 +64,7 @@ into the {body} of the default.hbs template --}}
                     </li>
 
                     <!-- linkedIn -->
-                    <li>
+                    <li class="share-this">
                         <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{url absolute='true'}}"
                            onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;">
                             <i class="fa fa-linkedin"></i>
@@ -72,7 +72,7 @@ into the {body} of the default.hbs template --}}
                     </li>
 
                     <!-- Pintrest -->
-                    <li>
+                    <li class="share-this">
                         <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
                             <i class="fa fa-pinterest"></i>
                         </a>

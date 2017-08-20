@@ -86,7 +86,7 @@ em {
     display: none;
 }
 
-a.pin-title {
+a:not( [href*='bendoylegray.com'] ):not( [href*='localhost'] ):not( [href^='#'] ):not( [href^='/'] ) {
     padding-right: 13px;
     background: url("../img/icon_externalLink.gif") top right no-repeat;
 }
@@ -194,6 +194,12 @@ a.site-nav-logo {
 
 #social-links ul li .fa:hover {
     color: #000000;
+}
+
+#social-links a,
+.share-this a,
+.powered-by a {
+    background: none !important;
 }
 
 /* 5.  Site Navigation
