@@ -421,7 +421,8 @@ pre {
 
     .home-template h1.site-title,
     .post-template h1.site-title,
-    .page-template h1.site-title {
+    .page-template h1.site-title,
+    .tag-template h1.site-title {
         font-size: 32px;
         padding-bottom: 10px;
     }
@@ -435,7 +436,8 @@ pre {
         margin-bottom: 15px;
     }
 
-    .post-template .site-nav {
+    .post-template .site-nav,
+    .tag-template .site-nav {
         border: none;
     }
 
@@ -456,7 +458,8 @@ pre {
         margin-bottom: 15px;
     }
 
-    .page-archive-post .post-feed {
+    .page-archive-post .post-feed,
+    .tag-template .post-feed {
         border-bottom: none;
     }
 }
@@ -471,7 +474,8 @@ pre {
 
     .home-template h1.site-title,
     .post-template h1.site-title,
-    .page-template h1.site-title {
+    .page-template h1.site-title,
+    .tag-template h1.site-title {
         font-size: 32px;
         padding-bottom: 10px;
     }
