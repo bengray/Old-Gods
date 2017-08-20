@@ -225,6 +225,17 @@ a.site-nav-logo {
     color: white;
 }
 
+#mobile-nav,
+#close-button {
+    display: none;
+}
+
+#mobile-nav {
+    border-bottom: 1px solid black;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 /* 6.  Post Feed
 /* ---------------------------------------------------------- */
 .post-card {
@@ -246,8 +257,14 @@ a.site-nav-logo {
 .post-template .site-nav,
 .page-template .site-nav,
 .tag-template .site-nav {
-    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+}
+
+.page-template h1.site-title,
+.post-template h1.site-title,
+.tag-template h1.site-title,
+.archive-template h1.site-title {
+    border-bottom: 1px solid black;
 }
 
 .post-template .site-main,
@@ -392,7 +409,7 @@ pre {
     float: right;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 543px) {
     .hidden-xs {
         display: none;
     }
@@ -402,29 +419,118 @@ pre {
         margin-right: 10px;
     }
 
-    h1.site-title {
-        font-size: 26px;
+    .home-template h1.site-title,
+    .post-template h1.site-title,
+    .page-template h1.site-title {
+        font-size: 32px;
+        padding-bottom: 10px;
     }
 
-    #social-links ul {
-        margin-top: -35px;
+    .page-template #mobile-nav {
+        border: none;
     }
 
+    .floating-header {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .post-template .site-nav {
+        border: none;
+    }
+
+    .post-template .site-main,
+    .page-template .site-main,
+    .tag-template .site-main {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #hamburger-button,
+    #close-button {
+        border-bottom: 1px solid black;
+    }
+
+    .post-feed {
+        border-bottom: 1px solid black;
+        margin-bottom: 15px;
+    }
+
+    .page-archive-post .post-feed {
+        border-bottom: none;
+    }
 }
-@media (min-width: 480px) {
+
+@media (min-width: 544px) and (max-width: 767px) {
     .hidden-sm {
         display: none;
     }
+    .visible-sm {
+        display: block;
+    }
+    .home-template h1.site-title,
+    .site-title {
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+
+    .floating-header {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .post-template .site-nav,
+    .page-template .site-nav,
+    .tag-template .site-nav {
+        border-bottom: none;
+    }
+
+    .post-template .site-main,
+    .page-template .site-main,
+    .tag-template .site-main {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #hamburger-button,
+    #close-button {
+        border-bottom: 1px solid black;
+    }
+
+    .post-feed {
+        border-bottom: 1px solid black;
+        margin-bottom: 15px;
+    }
+
+    .page-archive-post .post-feed {
+        border-bottom: none;
+    }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .hidden-md {
         display: none;
+    }
+    .visible-md {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .hidden-lg {
+        display: none;
+    }
+    .visible-lg {
+        display: block;
     }
 }
 
 @media (min-width: 1200px) {
-    .hidden-lg {
+    .hidden-xl {
         display: none;
+    }
+
+    .visible-xl {
+        display: block;
     }
 }

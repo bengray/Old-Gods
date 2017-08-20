@@ -3,11 +3,11 @@
 into the {body} of the default.hbs template --}}
 
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
-<header class="site-header">
+<header class="site-header hidden-xs hidden-sm">
     <h1 class="site-title">
         <a href="/">{{@blog.title}}</a>
     </h1>
-    <div id="social-links" class="hidden-xs">
+    <div id="social-links">
         <ul>
             <li>
                 <a href="http://github.com/bengray">
@@ -31,30 +31,6 @@ into the {body} of the default.hbs template --}}
             </li>
         </ul>
     </div>
-    <div id="social-links" class="hidden-sm hidden-md hidden-lg">
-        <ul>
-            <li>
-                <a href="http://github.com/bengray">
-                    <i class="fa fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="http://twitter.com/bgray">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-            <li>
-                <a href="http://instagram.com/bendoylegray">
-                    <i class="fa fa-instagram"></i>
-                </a>
-            </li>
-            <li>
-                <a href="/rss">
-                    <i class="fa fa-rss-square"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
     <div class="row">
         <div class="col-4">
             {{> "site-nav"}}
@@ -72,10 +48,12 @@ into the {body} of the default.hbs template --}}
 
 </header>
 
+{{> "mobile-header"}}
+
 {{!-- The main content area --}}
 <main id="site-main" class="site-main" role="main">
     <div class="row">
-        <div class="post-feed col-11 col-sm-6 margin-xs-horizontal-sm">
+        <div class="post-feed col-11 col-md-6 margin-xs-horizontal-sm">
             <h3 class="section-header">Journal</h3>
             {{#foreach posts limit="7"}}
 
@@ -89,12 +67,12 @@ into the {body} of the default.hbs template --}}
             </div>
         </div>
 
-        <div class="col-11 col-sm-4 margin-xs-horizontal-sm">
+        <div class="col-11 col-sm-6 col-lg-4 margin-xs-horizontal-sm">
             <h3 class="section-header">Linkroll</h3>
             <script language="javascript" src="http://pinboard.in//widgets/v1/linkroll/?user=bgray&count=20"></script>
         </div>
 
-        <div class="col-11 col-sm-2 margin-xs-horizontal-sm">
+        <div class="col-11 col-sm-6 hidden-md col-lg-2 margin-xs-horizontal-sm">
            {{> "tag-list"}}
         </div>
     </div>

@@ -3,17 +3,19 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-<header class="margin-vertical-lg col-4 padding-collapse-left">
+<header class="margin-vertical-lg col-4 padding-collapse-left hidden-xs hidden-sm">
     <h1 class="site-title">
         <a href="/">{{@blog.title}}</a>
     </h1>
     {{> "site-nav"}}
 </header>
 
+{{> "mobile-header"}}
+
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
-    <main id="site-main" class="site-main col-6" role="main">
+    <main id="site-main" class="site-main col-12 col-md-8 col-lg-6" role="main">
         <article class="post-full">
 
             <header class="post-full-header">
@@ -103,7 +105,7 @@ into the {body} of the default.hbs template --}}
 
         </article>
     </main>
-    <div class="col-2 hidden-xs">
+    <div class="col-2 hidden-xs hidden-sm hidden-md">
         {{> "tag-list"}}
         {{> "recent-posts"}}
     </div>
