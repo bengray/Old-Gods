@@ -38,11 +38,9 @@ into the {body} of the default.hbs template --}}
 
 {{!-- This bit here is the welcome message on the front page --}}
         <div class="welcome-note col-8">
-            <span>Hi, I'm Ben Gray.</span> I'm a software engineer by day, sportsman by night (and weekends).
-            I've taken a weird route to get to where I am today, it's not been direct and it's not been easy.
-            Good news for you, I love telling stories. I believe stories is the best way to teach, to share...
-            to bring others along. That's my goal here: to bring you along on my journey as it rolls out in front of me.
-
+            <span>Hi, I'm Ben Gray.</span> Software engineer by day, outdoorsman by night (and weekends).
+            I use this online space as an journal where I write about my experiences with web programming, the outdoors,
+            and pretty much anything else that comes to mind. <a href="/about">More about me </a>&rarr;
         </div>
     </div>
 
@@ -56,7 +54,7 @@ into the {body} of the default.hbs template --}}
         <div class="post-feed col-11 col-md-6 margin-xs-horizontal-sm">
             <h3 class="section-header">Journal</h3>
 
-            {{#get "posts" limit="8" as |recents|}}
+            {{#get "posts" limit="7" as |recents|}}
                 <ul id="recent-posts-list">
                     {{#foreach recents}}
                         {{> "post-card"}}
