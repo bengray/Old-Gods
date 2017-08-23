@@ -25,12 +25,12 @@ production stylesheet in assets/built/screen.css
 /* ---------------------------------------------------------- */
 body {
     background: #ffffff;
-    color: #414141;
+    color: #000000;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
 a {
-    color: #414141 /*#18314F*/;
+    color: #000000 /*#18314F*/;
     font-weight: 600;
 }
 
@@ -76,7 +76,7 @@ em {
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 26px;
 }
 
 .welcome-note span {
@@ -85,7 +85,7 @@ em {
 
 .pin-item {
     padding-bottom: 15px;
-    line-height: 22px;
+    line-height: 26px;
 }
 
 .pin-item br {
@@ -136,7 +136,7 @@ a:not( [href*='bendoylegray.com'] ):not( [href*='localhost'] ):not( [href^='#'] 
 #tag-list li a {
     color: white;
     font-size: 12px;
-    background: #414141;
+    background: #000000;
     padding: 5px;
     font-weight: normal;
     text-transform: uppercase;
@@ -254,7 +254,7 @@ a.site-nav-logo {
 /* ---------------------------------------------------------- */
 .post-card {
     margin-bottom: 30px;
-    line-height: 26px;
+    line-height: 30px;
 }
 
 .post-card-header {
@@ -263,7 +263,7 @@ a.site-nav-logo {
 }
 
 .archive-post {
-    line-height: 26px;
+    line-height: 30px;
 }
 
 /* 7.  Single Post/Page
@@ -302,7 +302,7 @@ a.site-nav-logo {
 
 .post-full-content,
 .page-full-content {
-    line-height: 26px;
+    line-height: 30px;
 }
 
 .page-template h3,
