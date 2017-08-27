@@ -12,4 +12,6 @@ $(document).ready(function() {
         $("#close-button").toggle();
         $("#hamburger-button").toggle();
     });
+
+    $("a[href^='http']").not("a[href^='http://bendoylegray.com']").attr("target", "_blank");
 });
