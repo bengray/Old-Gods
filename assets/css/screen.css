@@ -196,16 +196,16 @@ a.site-nav-logo {
     display: inline-block;
 }
 
-#social-links ul li a .fa {
+#social-links ul li a {
     color: #bbb;
     transition: .5s;
 }
 
-#social-links ul li a:hover .fa {
+#social-links ul li a:hover {
     color: #000000;
 }
 
-#social-links ul li.rss .fa:hover {
+#social-links ul li.rss a:hover {
     color: #f08827;
 }
 
