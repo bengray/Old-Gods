@@ -32,12 +32,17 @@ body {
 a {
     color: #000000 /*#18314F*/;
     font-weight: 600;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
 }
 
 a:hover {
     text-decoration: none;
     cursor: pointer;
-    color: #CF1259;
+    color: #DA1071;
 }
 
 h1 {
@@ -143,7 +148,7 @@ a:not( [href*='bendoylegray.com'] ):not( [href*='localhost'] ):not( [href^='#'] 
 }
 
 #tag-list li a:hover {
-    background: #CF1259;
+    background: #DA1071;
 }
 
 #recent-posts-list li {
@@ -191,12 +196,17 @@ a.site-nav-logo {
     display: inline-block;
 }
 
-#social-links ul li .fa {
+#social-links ul li a .fa {
     color: #bbb;
+    transition: .5s;
 }
 
-#social-links ul li .fa:hover {
+#social-links ul li a:hover .fa {
     color: #000000;
+}
+
+#social-links ul li.rss .fa:hover {
+    color: #f08827;
 }
 
 #social-links a,
@@ -232,7 +242,7 @@ a.site-nav-logo {
 }
 
 .nav li.nav-current {
-    background-color: #CF1259; /*#DA1074;*/
+    background-color: #DA1071; /*#DA1074;*/
 }
 
 .nav li.nav-current a {
