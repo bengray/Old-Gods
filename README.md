@@ -1,6 +1,6 @@
 # Old Gods
 
-The default theme for [bendoylegray.com](http://bendoylegray.com). This is the latest development version of Old Gods.
+A Ghost theme for [bendoylegray.com](http://bendoylegray.com). This is the latest development version of Old Gods.
 
 
 # This is a Ghost theme
